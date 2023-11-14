@@ -1,0 +1,95 @@
+/* เปลี่ยนสีพื้นหลังของ Sidebar */
+#sidebar {
+    background-color: #d9e4f2;
+    width: 135px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ปรับขนาดข้อความและสีข้อความของลิงค์ */
+  .nav {
+    color: #333; /* สีข้อความ */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    padding: 10px 20px; /* ระยะห่างขอบลิงค์ */
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.2s; /* อนิเมชันเมื่อมีการ hover บนลิงค์ */
+  }
+  
+  /* ปรับสีพื้นหลังของลิงค์เมื่อมีการ hover */
+  .nav:hover {
+    background-color: #007bff; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเมื่อ hover */
+    padding: 10px 20px;
+    width: 135px;
+  }
+
+  .navv:hover {
+    background-color: #ff0000; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    color: #fff; /* เปลี่ยนสีข้อความเมื่อ hover */
+    padding: 10px 20px;
+    width: 135px;
+  }
+  
+  .navv {
+    color: #333; /* สีข้อความ */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    padding: 10px 20px; /* ระยะห่างขอบลิงค์ */
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.2s; /* อนิเมชันเมื่อมีการ hover บนลิงค์ */
+  }
+/* เปลี่ยนสีพื้นหลังของ Sidebar */
+#sidebar {
+  background-color: #d9e4f2;
+  width: 135px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0; /* แก้ไขเพิ่มบรรทัดนี้ */
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับขนาดข้อความและสีข้อความของลิงค์ */
+.nav,
+.navv { /* รวมทั้ง .navv */
+  
+  color: #333; /* สีข้อความ */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  padding: 8px 10px; /* ระยะห่างขอบลิงค์ */
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s; /* อนิเมชันเมื่อมีการ hover บนลิงค์ */
+}
+
+/* ปรับสีพื้นหลังของลิงค์เมื่อมีการ hover */
+/* สีพื้นหลังของปุ่ม "ออกระบบ" เมื่อไม่ hover */
+.navv {
+  color: #333; /* สีข้อความ */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  padding: 8px 10px; /* ระยะห่างขอบลิงค์ */
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s; /* อนิเมชันเมื่อ hover บนลิงค์ */
+}
+
+/* ปรับสีพื้นหลังของปุ่ม "ออกระบบ" เมื่อ hover */
+.navv:hover {
+  background-color: #ff0000; /* เปลี่ยนสีพื้นหลังเมื่อ hover เป็นสีแดง */
+  color: #fff; /* เปลี่ยนสีข้อความเมื่อ hover เป็นสีขาว */
+  padding: 10px 20px;
+  width: 135px;
+}
+
+/* Sidebar.css */
+/* ปรับขนาดของไอคอน */
+img {
+  width: 20x; /* ปรับขนาดความกว้างของไอคอน */
+  height: 20px; /* ปรับขนาดความสูงของไอคอน */
+  margin-right: 8px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+}

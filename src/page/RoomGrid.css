@@ -1,0 +1,98 @@
+.room-manage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* แบ่งแถวเป็น 4 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างแต่ละห้อง */
+  margin: 20px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.room.occupied {
+  background-color: #ff9999; /* สีสำหรับห้องที่ใช้งาน */
+}
+
+.room.available {
+  background-color: #99ff99; /* สีสำหรับห้องที่ว่าง */
+}
+
+.room button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* เมื่อนำเข้าไฟล์ CSS นี้ในแอพของคุณ, กรุณาตรวจสอบ URL และไดเรกทอรีที่เกี่ยวข้องเพื่อให้แน่ใจว่าไฟล์ CSS ถูกใช้ในแอพของคุณ */
+
+
+.room-active {
+  background-color: rgb(87, 190, 87);
+}
+
+.room-inactive {
+  background-color: rgb(238, 27, 27);
+}
+
+.branch-list{
+  margin-top: 10px;
+  padding: 5px 10px;
+  align-items: center;
+  display: flex;
+  margin: 10px;
+}
+
+.even-button {
+  margin-right: 10px; /* Adjust margin for even buttons */
+  background-color: #a2c6ef; /* Green background color */
+  border: none; /* Remove borders */
+  color: rgb(0, 0, 0); /* White text color */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the element a block element to fill the width */
+  font-size: 22px; /* Set font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.odd-button {
+  background-color: #a2c6ef; /* Darker green background color for odd buttons */
+  border: none; /* Remove borders */
+  color: rgb(0, 0, 0); /* White text color */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the element a block element to fill the width */
+  font-size: 22px; /* Set font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.branch-heading {
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: -10px;
+  background-color: #a2c6ef;
+  border-radius: 5px;
+  padding: 15px 300px;
+  display: inline-block; /* Ensure the background color covers the entire width */
+}
+
+
+

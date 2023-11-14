@@ -1,0 +1,95 @@
+.room-status-container {
+  max-width: 800px;
+  margin: 120px;
+  margin-top: auto;
+  padding: 20px;
+    
+  }
+  
+  .status-heading {
+    margin-bottom: 10px;
+  }
+  
+  .status-label, .branch-label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .status-select, .branch-select {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .room-list {
+    list-style: none;
+    padding: 0;
+    border-radius: 15px;
+    margin: 0;
+    padding: 30px;
+  }
+  .room-List {
+        border-radius: 15px;
+    margin: 10px 0;
+    padding: 10px;
+    
+  }
+  
+  .room-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 24px;
+    flex-direction: column;
+    background-color: #7aabdf;
+    
+  }
+  
+  .room-info {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+
+  .room-status {
+    /* สีเริ่มต้น */
+    color: black;
+  }
+  
+  .awaiting-confirmation {
+    /* สีเมื่อรอยืนยัน (สีเหลือง) */
+    color: rgb(245, 242, 35);
+  }
+  
+  .confirmed {
+    /* สีเมื่อยืนยัน (สีเขียว) */
+    color: green;
+  }
+
+  
+  .confirm-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

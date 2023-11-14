@@ -1,0 +1,89 @@
+/* สไตล์หัวข้อหน้าจอหลัก */
+.container{
+  margin: 120px;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.dashboard-heading {
+  font-size: 45px;
+  font-weight: bold;
+  background-color: #a2c6ef; /* สีฟ้า */
+  color: #000000; /* สีข้อความขาว */
+  border-radius: 5px; /* ขอบโดยรอบมนวน */
+  text-align: left; /* จัดกึ่งกลางข้อความ */
+  margin: 10px;
+  padding: 10px;
+}
+
+/* สไตล์ขอบกรอบของข้อมูล */
+.card {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+/* สไตล์ตารางข้อมูล */
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* สไตล์หัวข้อตาราง */
+.table-header {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* สไตล์ข้อมูลในตาราง */
+.table-data {
+  padding: 10px;
+}
+
+/* สไตล์สถานะยืนยันและรอยืนยัน */
+.confirmed {
+  color: green;
+}
+
+.unconfirmed {
+  color: red;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+/* CSS สำหรับตัวเลือก dropdown */
+.filter-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+/* CSS สำหรับตัวเลือกที่ถูกเลือก */
+.filter-container select option {
+  background-color: #e0e0e0; /* เปลี่ยนสีพื้นหลังเมื่อเลือก */
+  font-size: 16px;
+}
+
+/* CSS สำหรับตัวเลือกที่ถูกเลือกและมีคลาส "filter-option" */
+.filter-option {
+  font-weight: bold;
+  color: #000000; /* เปลี่ยนสีตอนเลือก */
+}
+.chart-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* ระยะห่างระหว่างกราฟ */
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+

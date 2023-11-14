@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>แสดงกราฟข้อมูลจาก API</title>
+    <!-- เรียกใช้แพ็คเกจ Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>กราฟข้อมูลจาก API</h1>
+    <div style="width: 80%; margin: 0 auto;">
+        <!-- สร้าง canvas เพื่อแสดงกราฟ -->
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        // สร้างอาเรย์เพื่อเก็บจำนวนคนในแต่ละวัน
+        const customerData = [];
+
+        // เรียกใช้ API และสร้างกราฟเมื่อหน้าเว็บโหลดเสร็จ
+        window.addEventListener('load', function () {
+            // เรียกใช้ API จาก URL
+            fetch('http://190.92.220.17:7000/api/booking/timestamp-name')
+                .then(response => response.json())
+                .then(data => {
+                    // วนลูปผ่านข้อมูล API เพื่อเก็บข้อมูลในอาเรย์ customerData
+                    data.forEach(item => {
+                        customerData.push(item.customers);
+                    });
+
+                    // สร้าง canvas สำหรับแสดงกราฟ
+                    const ctx = document.getElementById('myChart').getContext('2d');
+
+                    // สร้างกราฟและกำหนดข้อมูล
+                    const myChart = new Chart(ctx, {
+                        type: 'bar', // ประเภทของกราฟ (แท่ง)
+                        data: {
+                            labels: customerData, // แกน x (จำนวนลูกค้า)
+                            datasets: [{
+                                label: 'จำนวนลูกค้า', // ชื่อของชุดข้อมูล
+                                data: customerData, // ข้อมูลจำนวนลูกค้า
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)', // สีพื้นหลังแท่ง
+                                borderColor: 'rgba(75, 192, 192, 1)', // สีขอบแท่ง
+                                borderWidth: 1 // ความหนาขอบแท่ง
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true // เริ่มแกน y ที่ 0
+                                }
+                            }
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('เกิดข้อผิดพลาดในการเรียกใช้ API: ', error);
+                });
+        });
+    </script>
+</body>
+</html>

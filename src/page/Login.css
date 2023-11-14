@@ -1,0 +1,40 @@
+.login-container {
+    background-color: #333; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    padding: 20px; /* ระยะห่างขอบ */
+    width: 300px; /* ความกว้าง */
+    margin: 0 auto; /* จัดกึ่งกลาง */
+    margin-top: 200px;
+    border-radius: 5px; /* ขอบโค้ง */
+  }
+  
+  .login-container h2 {
+    font-size: 1.5rem; /* ขนาดตัวอักษรสำหรับหัวข้อ "Login" */
+  }
+  
+  .login-container label {
+    display: block; /* แสดงแต่ละ label ในบรรทัดแยกกัน */
+    margin-top: 10px; /* ระยะห่างด้านบนขอบของ label */
+  }
+  
+  .login-container input {
+    width: 100%; /* ความกว้างของ input ให้เต็ม container */
+    padding: 10px; /* ระยะห่างขอบของ input */
+    border: 1px solid #ccc; /* ขอบของ input */
+    border-radius: 3px; /* ขอบโค้งของ input */
+  }
+  
+  .login-button {
+    background-color: #0074cc; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีข้อความในปุ่ม */
+    padding: 10px 20px; /* ขนาดของปุ่ม */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 3px; /* ขอบโค้งของปุ่ม */
+    cursor: pointer; /* สัญลักษณ์เมาส์เป็นประเภท cursor */
+    margin-top: 20px; /* ระยะห่างด้านบนของปุ่ม */
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3; /* สีพื้นหลังปุ่มเมื่อเมาส์ผ่านไป */
+  }
+  

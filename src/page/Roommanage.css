@@ -1,0 +1,40 @@
+/* Roommanage.css */
+
+.roommanage-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Roommanage-heading {
+    position: absolute;
+    top: 20px; 
+    left: 150px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    background-color: #a2c6ef; 
+    padding: 10px 30px; 
+    border-radius: 5px; 
+    white-space: nowrap; 
+  }
+
+
+
+
+
+.Roommanage-Calendar{
+  
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+  
+}
